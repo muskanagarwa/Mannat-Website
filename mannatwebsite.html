@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mannatwebsite.css">
+    <title>Mannat's Website</title>
+</head>
+<body>
+  <header class="header">
+      <!-- logo -->
+      <div id="logo">
+<img src="data:image/png;base64,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" alt="logo">
+      </div>
+      <!-- nav bar -->
+      <nav>
+<ul id="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about-us">About us</a></li>
+    <li><a href="#faculty">Faculty</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#Sign-up">Contact Us</a></li>
+</ul>
+
+      </nav>
+  </header>
+   
+  
+<!-- main section  -->
+<section id="home">
+    <!-- heading -->
+    <h1>MANNAT- Educating Minds</h1>
+  
+    <!-- tag line -->
+    <p id="tagline">Nurturing Future Generations</p>
+    
+    <!-- <button>Know More</button> -->
+</section>
+
+<!-- about us section  -->
+
+<section id ="about-us">
+<div>
+   <h1 class="red-text center-text"> ABOUT US <h1></h1>
+We, at Mannat, are highly passionate and determined to bring excellence in coaching standards and to prepare students for the competitiveness at the national level.
+<br>
+We are very enthusiastic and passionate about teaching and have always been very serious about building careers, be it our own or any aspirational student seeking high quality guidance. We continuously aim to upgrade your child’s ability for his/her first class global future.
+<br>
+We take responsibility of teaching, developing and excelling your kid’s career/performance at school and beyond.
+<br>
+<p id="bold">We do not employ any other tutors. We commit, we deliver.</p>
+<br>
+
+<h1 class="red-text center-text">OUR APPROACH</h1>
+
+<ul>
+
+<li><span class="red-text">Exposure :</span>We expose our students to the real world examples of professionals who have achieved success and appreciation in their student life and excelled in their career. Two of them being the main faculties at Flying Colors; who has carved a niche career for themselves in USA by working in top notch global MNCs like Deloitte and Panasonic.</li>
+
+<li><span class="red-text">Entertainment:</span>We believe in making our classroom sessions very lively. With the help of Audio-visual aids and other technological usage; we try to create our lectures interesting and exciting. We use fun way of making complex concepts, simple and easy to memorize.</li>
+
+<li><span class="red-text">Expand :</span>We believe in making our classroom sessions very lively. With the help of Audio-visual aids and other technological usages; we try to create our lectures interesting and exciting. We use fun way of making complex concepts, simple and easy to memorize.</li>
+</ul>
+
+<h1 class="red-text center-text">FEATURES OF ACADEMY</h1>
+
+<ul>
+<li>Learn directly from those who have excelled the entire value chain of education ladder and worked with world class companies</li>
+<li>Technology enabled spacious classrooms.</li>
+<li>Interactive coaching</li>
+<li>Weekly and Monthly tests</li>
+<li>Sample Papers for Exam Preparation</li>
+<li>Extra Coaching for slow seekers students.</li>
+</ul>
+
+</div>
+</section>
+
+<!-- Faculty section -->
+
+<h1 class="red-text center-text">Faculty</h1>
+<p id="size">Learn directly from those who have excelled the entire value chain of education ladder and worked with tech companies. The instructors holds Bachelor level degrees in computer engineering. We, at Mannat,are highly passionate and determined to bring excellence in coaching standards and to prepare students for the competitiveness at the national.</p>
+<section id="faculty">
+    <div id="faculty-content">
+        <div class="content-box">
+            <img src="data:image/jpeg;base64,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">
+            <p>Muskan Agarwal</p>
+            <p>Bachelor of Engineering (Computer Science)
+<br>
+                She has been a high performer in education and career. From her college days, she is known for inventing new techniques in teaching and imparting knowledge with a creative approach. Her sessions are interactive, engaging, impressive and comprehensive. She has been highly regarded for providing innovative tips and tricks for cracking complex topics especially in subjects related to Mathematics and Science.</p>
+        </div>
+    </div>
+</section>
+
+<!-- courses section  -->
+<section id="courses">
+<h1 class="red-text center-text">Courses</h1>
+<div class="border">
+<p class="red-text">Secondary</p>
+<p>Std. 8th / 9th / 10th: Maths/Science</p>
+</div>
+
+<div class="border">
+<p class="red-text">Primary</p>
+<p>Std. 1st / 2nd / 3rd / 4th / 5th / 6th / 7th: All Subjects</p>
+</div>
+</section>
+<!-- contact us  -->
+
+<h1 class="red-text center-text">Contact Us</h1>
+<h3 class="red-text center-text">Our Office</h3>
+<p class="center-text">Address: bhatar char rasta,Surat</p>
+
+<h1 class="red-text center-text">Inquiry Form</h1>
+
+<div id="Sign-up">
+
+    <form>
+        <label for="name"> FIRST NAME</label>
+
+        <input type="text" id="name" name="first-name" required >
+        <br><br>
+        <label for="name"> LAST NAME</label>
+
+        <input type="text" id="name" name="first-name" required>
+        <br><br>
+        <label for="email">EMAIL</label>
+
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label>PASSWORD</label>
+        <input type="password" required>
+        <br><br>
+        <label>CONFIRM PASSWORD</label>
+        <input type="password" required>
+        <br><br>
+        <label>AGE</label>
+        <input type="number" max=40 required>
+        <br><br>
+        <label>CONTACT</label>
+        <input type="tel" required>
+        <br><br>
+        <label>STATE</label>
+        <input type="text" required>
+        <br><br>
+        <div>
+            <p> Do you like to study?</p>
+            <input type="radio" required>
+            <label for="yes">Yes</label>
+            <input type="radio"required>
+            <label for="no">No</label>
+        </div>
+</body>
+</html>
